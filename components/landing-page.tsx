@@ -1,7 +1,12 @@
 "use client";
 import Image from "next/image";
 import * as Accordion from "@radix-ui/react-accordion";
-import { motion, useInView, useReducedMotion } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useReducedMotion,
+  type Variants,
+} from "framer-motion";
 import {
   ArrowRight,
   BadgeCheck,
@@ -31,12 +36,12 @@ import { FormEvent, ReactNode, useRef, useState } from "react";
 const WA = "8801608152072",
   PHONE = "01608152072",
   FB = "https://www.facebook.com/share/1BrUnocnr9/";
-const reveal = {
+const reveal: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] as const },
   },
 };
 function Reveal({

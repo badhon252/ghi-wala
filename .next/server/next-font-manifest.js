@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/khalid/Downloads/ghi-wala-landing/app/layout":["static/media/a3a053d5ba3eaf5e-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
